@@ -1,2 +1,3 @@
 # ATCS-2022
-ATCS 2022-2023
+Class: ATCS 2022-2023
+Student: Raul Martinez Luna
