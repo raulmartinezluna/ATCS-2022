@@ -1,0 +1,9 @@
+.row {
+    display: flex
+}
+.written-content {
+    flex: 30%;
+}
+.image-content {
+    flex: 70%;
+}
