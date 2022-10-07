@@ -9,7 +9,7 @@
     grid-template-areas: 'written  image'
 }
 .written-content {
-    padding-top: 50%;
+    padding-top: 60%;
     padding-left: 80%;
 }
 .circular-image {
@@ -19,4 +19,10 @@
     width: 200;
     height: 200;
     overflow: hidden;
+}
+img {
+    border-radius: 50%;
+}
+a {
+    color: black;
 }
