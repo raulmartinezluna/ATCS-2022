@@ -1,0 +1,32 @@
+.grid-1 {
+    grid-area: bar;
+}
+.grid-2 {
+    grid-area: info;
+}
+.grid-3 {
+    grid-area: signature
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'bar'
+    'info'
+    'signature'
+}
+.contact-bar {
+    padding-top: 15%;
+    text-align: center;
+}
+h1 {
+    font-size: 64px;
+    font-family: fantasy;
+}
+.contact-info {
+    padding-top: 10%;
+    text-align: center;
+}
+p {
+    font-size: 32px;
+    font-family: fantasy;
+}
