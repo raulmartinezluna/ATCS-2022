@@ -47,5 +47,5 @@ p {
     padding: 10px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    transform-origin: 100px;
+    transform-origin: 275px 600px;
 }
