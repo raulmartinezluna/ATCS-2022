@@ -1,11 +1,14 @@
 .grid-1 {
     grid-area: image;
-    height: inherit;
+    height: 100vh;
     width: 40vw;
+    position: relative;
+    bottom: 50px;
+    right: 50px;
 }
 .grid-2 {
     grid-area: about;
-    height: inherit;
+    height: 100vh;
     width: 60vw;
 }
 .grid-container {
@@ -17,8 +20,32 @@
 img {
     object-fit: cover;
     height: inherit;
-    width: 40vw;
+    width: 40.2vw;
+    position: fixed;
 }
-.content-2 {
-
+h2 {
+    font-family: fantasy;
+    width: 40%;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 30%;
+}
+h3 {
+    font-family: fantasy;
+    text-align: center;
+ 
+}
+p {
+    font-family:fantasy;
+    text-align: center;
+}
+/* Taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows and adjusted to make it larger*/
+.arrow {
+    border: solid black;
+    border-width: 0px 10px 10px 0px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform-origin: 100px;
 }
