@@ -10,7 +10,7 @@
 }
 .written-content {
     padding-top: 60%;
-    padding-left: 80%;
+    padding-left: 65%;
 }
 .circular-image {
     padding-top:  25%;
@@ -20,7 +20,7 @@
     height: 200;
     overflow: hidden;
 }
-img {
+#imga {
     border-radius: 50%;
 }
 a {

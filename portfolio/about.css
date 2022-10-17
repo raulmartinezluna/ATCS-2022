@@ -17,11 +17,17 @@
     height: 100vh;
     width: 100vw;
 }
-img {
+#imga {
     object-fit: cover;
     height: inherit;
     width: 40.2vw;
     position: fixed;
+}
+#imgb {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 5%;
 }
 h2 {
     font-family: fantasy;
@@ -48,4 +54,14 @@ p {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform-origin: 275px 600px;
+}
+.subtitle {
+    padding-top: 50%;
+    padding-bottom: 20%;
+}
+ul {
+    font-family: fantasy;
+}
+li {
+    padding-top: 3%;
 }
