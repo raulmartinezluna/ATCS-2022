@@ -46,5 +46,5 @@ li {
 }
 
 .carousel-indicators li.active {
-    background: #28a745;
+    background: grey;
 }

@@ -1,9 +1,30 @@
+.start-point {
+    padding-top: 5%;
+}
+.arrow-text {
+    padding-top: 3%
+}
+.arrow {
+    border: solid black;
+    border-width: 0px 10px 10px 0px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.poem-cards {
+    padding-top: 5%;
+}
 .content {
     text-align: center;
 }
 h1 {
     font-family: fantasy;
     font-size: 128px;
+}
+h3 {
+    font-family: fantasy;
+    font-size: 36px;
 }
 /*Used a tag and class in combination, as per the comments on HTML 03 and 04, also I turned in styled sheet.css*/
 .content p {
