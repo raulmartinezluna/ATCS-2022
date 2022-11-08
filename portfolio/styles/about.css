@@ -1,42 +1,19 @@
-.grid-1 {
-    grid-area: image;
-    height: 100vh;
-    width: 40vw;
-    position: relative;
-    bottom: 50px;
-    right: 50px;
-}
-.grid-2 {
-    grid-area: about;
-    height: 100vh;
-    width: 60vw;
-}
-.grid-container {
-    display: grid;
-    grid-template-areas: 'image about';
-    height: 100vh;
-    width: 100vw;
-}
-#imga {
-    object-fit: cover;
-    height: inherit;
+#pfp {
     width: 40.2vw;
     position: fixed;
+    left: 0;
 }
 h2 {
     font-family: fantasy;
-    width: 40%;
-    text-align: center;
-    padding-left: 30%;
-    padding-top: 30%;
+    padding-top: 20%;
 }
 h3 {
     font-family: fantasy;
-    text-align: center;
+    padding-top: 25%;
  
 }
 p {
-    font-family:fantasy;
+    font-family: fantasy;
     text-align: center;
 }
 /* Taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows and adjusted to make it larger*/
@@ -47,15 +24,27 @@ p {
     padding: 10px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    transform-origin: 275px 600px;
-}
-.subtitle {
-    padding-top: 50%;
-    padding-bottom: 20%;
 }
 ul {
     font-family: fantasy;
 }
 li {
     padding-top: 3%;
+}
+/*From https://jsfiddle.net/bootstrapious/tqagdo0z*/
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
 }
