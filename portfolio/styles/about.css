@@ -1,0 +1,50 @@
+#pfp {
+    width: 40.2vw;
+    position: fixed;
+    left: 0;
+}
+h2 {
+    font-family: fantasy;
+    padding-top: 20%;
+}
+h3 {
+    font-family: fantasy;
+    padding-top: 25%;
+ 
+}
+p {
+    font-family: fantasy;
+    text-align: center;
+}
+/* Taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows and adjusted to make it larger*/
+.arrow {
+    border: solid black;
+    border-width: 0px 10px 10px 0px;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+ul {
+    font-family: fantasy;
+}
+li {
+    padding-top: 3%;
+}
+/*From https://jsfiddle.net/bootstrapious/tqagdo0z*/
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: grey;
+}

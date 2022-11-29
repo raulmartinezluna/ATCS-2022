@@ -1,66 +1,163 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Your Personal CSS BELOW this Line -->
         <title>About - Raul Martinez Luna</title>
-        <link rel="stylesheet" type="text/css" href="about.css">
+        <link rel="stylesheet" type="text/css" href="styles/about.css">
     </head>
     <body>
-        <div class="grid-container">
-            <div class="grid-1">
-                <div class="content-image">
-                    <!--Image sometimes disappears, I'm trying to use google photos as a way to store this image publically,
-                        but it disappears after a day the link to the album is public now so hopefully that fixes the issue,
-                        if it doesn't then the image can be found at this link: https://photos.app.goo.gl/b88AtvVTgokxaYt9A
-                    -->
-                    <img id="imga" src="https://lh3.googleusercontent.com/pw/AL9nZEWjjEt3VptMZoEyGueI1wnilEyV6yA9ioNWnHne807jXF0e8ccmLZPXgacZtGt09_wSR-cSQpTKcIxNBD5aZr7cOytUWf8AEw5hQb9Qj_fgIFzuQLdkwtOTFBgfDWQ0t8-cvqJp23VuEMbnoUwQkrtV=w599-h900-no?authuser=0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html">Raul Martinez Luna</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="about.html">About</a>
+                                    <a class="nav-item nav-link" href="poems.html">Poems</a>
+                                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <div class="grid-2">
-                <div class="summary">
-                    <h2>
-                        Raul is a senior at Menlo and takes part in Latinos Unidos and the Robotics club.
-                        He is one of the leaders of Latinos Unidos and often dances at school events to represent his culture.
-                        His hobbies include playing volleyball, reading books, and writing poetry.
-
-                    </h2>
+            <div class="row">
+                <div class="col-5">
+                    <div class="content-image">
+                        <!--Image sometimes disappears, I'm trying to use google photos as a way to store this image publically,
+                            but it disappears after a day the link to the album is public now so hopefully that fixes the issue,
+                            if it doesn't then the image can be found at this link: https://photos.app.goo.gl/b88AtvVTgokxaYt9A
+                        -->
+                        <img id="pfp" src="https://lh3.googleusercontent.com/pw/AL9nZEWjjEt3VptMZoEyGueI1wnilEyV6yA9ioNWnHne807jXF0e8ccmLZPXgacZtGt09_wSR-cSQpTKcIxNBD5aZr7cOytUWf8AEw5hQb9Qj_fgIFzuQLdkwtOTFBgfDWQ0t8-cvqJp23VuEMbnoUwQkrtV=w599-h900-no?authuser=0">
+                    </div>
                 </div>
-                <div class="lead">
-                    <h3>Look below to find more details about Raul.</h3>
-                    <i class="arrow"></i>
-                </div>
-                <div class="subtitle">
-                    <h3>Experiences</h3>
-                    <ul>
-                        <li>PAUSD Student Representative for Terman at the 2018 Textbook Selection Committee (2018)</li>
-                        <li>
-                            Menlo School Kickstart Program
-                            <ul>
-                                <li>Teacher's Assistant (2019-2022)</li>
-                                <li>Instructor (2022)</li>
-                            </ul>
-                        </li>
-                        <li>Facebook Extern (2021)</li>
-                        <li>
-                            iOS Apps
-                            <ul>
-                                <li>findIt! - Finds random restaurants in your vicinity with custom set parameters of your choosing. (2021)</li>
-                                <li>iSight - Showcases the blurriness that people with impaired vision see by replicating the vision by altering the focus of the camera. (2022)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Extracurriculurs
-                            <ul>
-                                <li>Robotics (2019-2020 & 2022)</li>
-                                <li>Ballet Folklorico (2013-)</li>
-                                <li>Foundation for a College Education (2019-)</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="col-7">
+                    <div class="summary text-center">
+                        <h2>
+                            Raul is a senior at Menlo and takes part in Latinos Unidos and the Robotics club.
+                            He is one of the leaders of Latinos Unidos and often dances at school events to represent his culture.
+                            His hobbies include playing volleyball, reading books, and writing poetry.
+    
+                        </h2>
+                    </div>
+                    <div class="lead text-center">
+                        <h3>Look below to find more details about Raul.</h3>
+                        <i class="arrow"></i>
+                    </div>
+                    <!--From https://jsfiddle.net/bootstrapious/tqagdo0z-->
+                    <div class="col-lg-10 col-xl-8 mx-auto">
+                        <div class="p-5 bg-white">
+                            <!-- Bootstrap carousel-->
+                            <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                                <!-- Bootstrap carousel indicators [nav] -->
+                                <ol class="carousel-indicators mb-0">
+                                    <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Bootstrap inner [slides]-->
+                                <div class="carousel-inner px-5 pb-4">
+                                    <!-- Carousel slide-->
+                                    <div class="carousel-item active">
+                                        <div class="media"><img class="rounded-circle img-thumbnail" src="https://bootstrapious.com/i/snippets/sn-slider-quote/avatar-1.jpg" alt="" width="75">
+                                            <div class="media-body ml-3">
+                                                <blockquote class="blockquote border-0 p-0">
+                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>It is only with the heart that one can see rightly; what is essential is invisible to the eye.</p>
+                                                    <footer class="blockquote-footer">Antoine de St. Exupery <cite title="Source Title">From The Little Prince</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Carousel slide-->
+                                    <div class="carousel-item">
+                                        <div class="media"><img class="rounded-circle img-thumbnail" src="https://bootstrapious.com/i/snippets/sn-slider-quote/avatar-3.jpg" alt="" width="75">
+                                            <div class="media-body ml-3">
+                                                <blockquote class="blockquote border-0 p-0">
+                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>He's truthful like me!</p>
+                                                    <footer class="blockquote-footer">Sunless
+                                                        <cite title="Source Title">From Shadow Slave</cite>
+                                                    </footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Carousel slide-->
+                                    <div class="carousel-item">
+                                        <div class="media"><img class="rounded-circle img-thumbnail" src="https://bootstrapious.com/i/snippets/sn-slider-quote/avatar-2.jpg" alt="" width="75">
+                                            <div class="media-body ml-3">
+                                                <blockquote class="blockquote border-0 p-0">
+                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>There is only one thing we say to death: Not today.</p>
+                                                    <footer class="blockquote-footer">Syrio Forel
+                                                        <cite title="Source Title">A Game of Thrones</cite>
+                                                    </footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bootstrap controls [dots]-->
+                                <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <i class="fa fa-angle-left text-dark text-lg"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <i class="fa fa-angle-right text-dark text-lg"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Experiences</h3>
+                        <ul>
+                            <li>PAUSD Student Representative for Terman at the 2018 Textbook Selection Committee (2018)</li>
+                            <li>
+                                Menlo School Kickstart Program
+                                <ul>
+                                    <li>Teacher's Assistant (2019-2022)</li>
+                                    <li>Instructor (2022)</li>
+                                </ul>
+                            </li>
+                            <li>Facebook Extern (2021)</li>
+                            <li>
+                                iOS Apps
+                                <ul>
+                                    <li>findIt! - Finds random restaurants in your vicinity with custom set parameters of your choosing. (2021)</li>
+                                    <li>iSight - Showcases the blurriness that people with impaired vision see by replicating the vision by altering the focus of the camera. (2022)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Extracurriculurs
+                                <ul>
+                                    <li>Robotics (2019-2020 & 2022)</li>
+                                    <li>Ballet Folklorico (2013-)</li>
+                                    <li>Foundation for a College Education (2019-)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-outline-dark btn-block" href="contact.html" role="button">Contact Us</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <a href="index.html">
-            <img id="imgb" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
-        </a>
+            
+        <!-- Your Content ABOVE this Line -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

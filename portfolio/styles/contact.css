@@ -1,0 +1,41 @@
+.starting-point {
+    padding-top: 75px;
+}
+
+.contact-bar {
+    padding-top: 10%;
+    text-align: center;
+}
+.spacer-1 {
+    padding-top: 5%
+}
+.spacer-2 {
+    padding-top: 3%;
+}
+h1 {
+    font-size: 64px;
+    font-family: fantasy;
+}
+h2 {
+    font-family: fantasy;
+}
+h3 {
+    font-family: fantasy;
+}
+h4{
+    font-family: fantasy;
+}
+h5 {
+    font-family: fantasy;
+}
+h6 {
+    font-family: fantasy;
+}
+.contact-info {
+    padding-top: 10%;
+    text-align: center;
+}
+p {
+    font-size: 32px;
+    font-family: fantasy;
+}
