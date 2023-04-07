@@ -51,6 +51,7 @@ class Twitter:
                 if user is None:
                     db_session.add(User(username, password))
                     db_session.commit()
+                    user = db_session.query(User).where(User.username == username).first()
                     self.currentUser = user
                     break
                 else:
