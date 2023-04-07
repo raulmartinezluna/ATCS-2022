@@ -28,14 +28,24 @@ class User(Base):
                              overlaps="following")
     tweets = relationship("Tweet", back_populates="user")
 
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
+    def __repr__(self):
+        return "@" + self.username
 
 class Follower(Base):
     __tablename__ = "followers"
 
     # Columns
     id = Column("id", INTEGER, primary_key=True)
-    follower_id = Column('follower_id', TEXT, ForeignKey('users.username'))
-    following_id = Column('following_id', TEXT, ForeignKey('users.username'))
+    follower_id = Column('follower_id', TEXT, ForeignKey("users.username"))
+    following_id = Column('following_id', TEXT, ForeignKey("users.username"))
+
+    def __init__(self, follower_id, following_id):
+        self.follower_id = follower_id
+        self.following_id = following_id
 
 class Tweet(Base):
     # TODO: Complete the class
@@ -45,12 +55,24 @@ class Tweet(Base):
     #Columns
     id = Column("id", INTEGER, primary_key=True)
     content = Column("content", TEXT, nullable=False)
-    timestamp = Column("content", DATETIME, nullable=False)
+    timestamp = Column("timestamp", DATETIME, nullable=False)
     username = Column("username", TEXT, ForeignKey("users.username"))
 
     #Relationships
     user = relationship("User", back_populates="tweets")
     tweettag = relationship("TweetTag", back_populates="tweet")
+    
+    def __init__(self, content, timestamp, username):
+        self.content = content
+        self.timestamp = timestamp
+        self.username = username
+
+    def __repr__(self):
+        name = self.user.username
+        tweetText = self.content
+        tags = "".join(["#"+x.tag.content+" " for x in self.tweettag])
+        time = self.timestamp
+        return "@{}:\n{}\n{}\n{}".format(name, tweetText, tags, time)
 
 class Tag(Base):
     # TODO: Complete the class
@@ -63,6 +85,12 @@ class Tag(Base):
 
     #Relationships
     tweettag = relationship("TweetTag", back_populates="tag")
+
+    def __init__(self, content):
+        self.content = content
+
+    def __repr__(self):
+        return "#" + self.content
 
 class TweetTag(Base):
     # TODO: Complete the class
@@ -77,3 +105,7 @@ class TweetTag(Base):
     #Relationships
     tweet = relationship("Tweet", back_populates="tweettag")
     tag = relationship("Tag", back_populates="tweettag")
+
+    def __init__(self, tweet_id, tag_id):
+        self.tweet_id = tweet_id
+        self.tag_id = tag_id
